@@ -1,0 +1,100 @@
+{
+  "document": {
+    "title": "Defining Your Struggling Avatar",
+    "module": 2,
+    "section": 2,
+    "video": 2
+  },
+  "core_concept": {
+    "definition": "The Struggling Avatar (SA) is an identity you create within your messaging ecosystem that your audience self-identifies with and starts using as a label for themselves.",
+    "example": "The author's SA is the 'unheard entrepreneur'; people in the ecosystem start calling themselves that.",
+    "mechanism": [
+      "Messaging is specific enough that the audience's subconscious recognizes 'that is me' without deliberate thought",
+      "The audience identifies as the SA but also realizes they don't want to stay that way",
+      "That tension creates desire for a way out, which is where the Future Paced Hero (FPH) and Unique Solution come in"
+    ]
+  },
+  "tips": [
+    {
+      "tip": "Description matters more than the name",
+      "detail": "Names can be changed any time; the audience doesn't know the SA/FPH framework exists."
+    },
+    {
+      "tip": "Optional 'positive-negative' naming",
+      "detail": "Pair a problem-describing word with a softer, positive word.",
+      "examples": ["Powerful Seeker", "Well-Intended Lost Soul", "Struggling But Optimistic Wanderer"]
+    },
+    {
+      "tip": "Accurate over gentle",
+      "detail": "The author prefers naming people as they are or feel; an accurate description isn't inherently negative. The goal is recognition plus a wish to leave the identity."
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "title": "Your avatar isn't who you think it is",
+      "guidance": "If you've been through the transformation you now teach, you ARE your avatar — speak to an older version of yourself rather than inventing one.",
+      "benefits": [
+        "Very specific messaging, since you know the avatar's thoughts, feelings, mistakes, actions and beliefs",
+        "Lets you weave in your own identities, core values and beliefs",
+        "Attracts people most like you at the core who struggle with what you solved"
+      ],
+      "exception": {
+        "case": "You have expertise without personal experience (e.g. a doctor treating illnesses they never had)",
+        "approach": "Picture your favorite client, interview them for specifics — but still use your own identities and core values in messaging."
+      }
+    },
+    {
+      "step": 2,
+      "title": "List struggles and emotions before the transformation",
+      "guidance": "Yours, or your favorite client's. Multiple are fine.",
+      "examples": ["burnout", "depressed", "excited", "lost", "working hard"]
+    },
+    {
+      "step": 3,
+      "title": "Identify the label or identity of the older you (or client)",
+      "guidance": "What they felt they were or did — usually a noun.",
+      "examples": ["entrepreneur", "business owner", "teacher", "mom", "athlete", "wanderer"]
+    },
+    {
+      "step": 4,
+      "title": "Combine steps 2 and 3 into one identity — your Struggling Avatar",
+      "formula": "adjective(s) + identity",
+      "examples": ["unheard entrepreneur", "lost wanderer", "overwhelmed educator", "unconfident athlete"],
+      "usage": "Whenever you describe a mistake, problem, myth or consequence, call the audience by this SA name so they adopt it and want to move out of it.",
+      "note": "Start with something; it can be changed later."
+    },
+    {
+      "step": 5,
+      "title": "Choose core values and identities to bring into the business",
+      "guidance": "Mainly for your own awareness, to infuse titles, copy, scripts and everyday social posts; they can also appear in the SA name.",
+      "action_items": [
+        "Pick your top 5 core values from the values list",
+        "Pick your top 3 identities"
+      ],
+      "warning": "These will shape who you attract."
+    },
+    {
+      "step": 6,
+      "title": "Build the Struggling Avatar Profile",
+      "guidance": "A one-page reference you keep filling in through later videos — your north star for relating to the audience, attracting people most like you and not bending to external pressure."
+    }
+  ],
+  "struggling_avatar_profile_template": {
+    "struggling_avatar_identity": "",
+    "core_values_or_what_they_find_important": "",
+    "future_paced_hero": "",
+    "identities_and_core_values_they_connect_with": "",
+    "specific_feelings": [],
+    "specific_mistakes": [],
+    "specific_pains_from_those_mistakes": []
+  },
+  "key_takeaways": [
+    "The SA is a self-adopted identity that sparks recognition and a desire to change.",
+    "Usually your avatar is your past self; otherwise, model your favorite client.",
+    "Formula: struggle adjective(s) + identity noun.",
+    "Use the SA name consistently whenever discussing problems or mistakes.",
+    "Bake your top 5 values and top 3 identities into your messaging.",
+    "Keep an evolving SA profile as your messaging north star."
+  ]
+}
