@@ -1,0 +1,1642 @@
+{
+  "manifest": {
+    "name": "ngm-messaging-manifest",
+    "version": "1.0",
+    "framework": "New Generation Mastery (NGM)",
+    "coverage": [
+      "S1 Invisible elements -> framework.principles, brand_context.identity",
+      "S2 Messaging ecosystem -> brand_context, framework.ecosystem, framework.evolution",
+      "S2 Language patterns -> framework.language_patterns",
+      "S3 Content -> framework.content_mix, topic_discovery, titles, script_templates, format_adapters",
+      "S4 Exposure -> framework.distribution_and_testing, framework.sales_mechanisms"
+    ],
+    "usage": {
+      "flow": "Creator identity > Messaging ecosystem > Topics > Titles > Script template > Format > Test",
+      "file_map": {
+        "brand_context": "USER FILLS ONCE — the Messaging Elements Guide",
+        "topic_bank": "USER FILLS, GROWS — belief map, misconceptions, objections, winners",
+        "generation_request": "PER SCRIPT — what to make right now",
+        "framework": "STATIC — principles, patterns, titles, templates, adapters",
+        "output_spec": "STATIC — exact shape of the model's answer",
+        "crosswalk": "STATIC — NGM <-> market/offer manifest + awareness stages"
+      },
+      "prompt_assembly": {
+        "system": [
+          "framework",
+          "output_spec",
+          "crosswalk"
+        ],
+        "user": [
+          "brand_context",
+          "topic_bank",
+          "generation_request"
+        ],
+        "note": "system parts never change -> cacheable"
+      },
+      "fill_rules": [
+        "Leave a field empty (null) rather than guess. Empty fields are skipped.",
+        "Write only TRUE specifics (real numbers, real mistakes, real stories). The model uses only what is here and flags gaps as [NEEDS: path.to.field] instead of inventing.",
+        "SA / FPH / method names can change anytime. The audience never sees them as labels."
+      ],
+      "notes_convention": "Each top-level part has a _notes object: the YAML inline comments, keyed by path relative to that part (a.b[0].c). Fill guidance, allowed values and examples live there."
+    }
+  },
+  "brand_context": {
+    "creator": {
+      "name": null,
+      "brand_name": null,
+      "expertise": null,
+      "offer_names": [],
+      "languages": [],
+      "platforms": {
+        "main": null,
+        "secondary": []
+      },
+      "niche_state": null,
+      "messaging_level": null
+    },
+    "voice": {
+      "tone_words": [],
+      "energy": null,
+      "signature_phrases": [],
+      "words_never_used": [],
+      "profanity": null,
+      "sample_transcript": null
+    },
+    "identity": {
+      "core_values": [],
+      "identities": [],
+      "things_i_want_to_say": [],
+      "silence_notes": [],
+      "natural_ability": null,
+      "mastery": {
+        "lived_experience": [],
+        "failures_and_lessons": [
+          {
+            "mistake": null,
+            "why_i_did_it": null,
+            "lesson": null
+          }
+        ],
+        "original_ip": []
+      },
+      "boundaries": {
+        "topics_off_limits": [],
+        "never_do": [],
+        "audience_never_gets": []
+      }
+    },
+    "struggling_avatar": {
+      "name": null,
+      "identity_noun": null,
+      "source": null,
+      "struggles_and_emotions": [],
+      "description": null
+    },
+    "future_paced_hero": {
+      "name": null,
+      "identity_noun": null,
+      "transformation": null,
+      "outcomes": [],
+      "feelings": [],
+      "movement_name": null,
+      "description": null
+    },
+    "unique_solution": {
+      "name": null,
+      "type": null,
+      "simple_promise": null,
+      "what_makes_it_unique": [],
+      "passes_10_expert_test": null,
+      "pillars": [
+        {
+          "name": null,
+          "what_it_is": null,
+          "result_it_creates": null,
+          "pain_when_missing": null
+        },
+        {
+          "name": null,
+          "what_it_is": null,
+          "result_it_creates": null,
+          "pain_when_missing": null
+        },
+        {
+          "name": null,
+          "what_it_is": null,
+          "result_it_creates": null,
+          "pain_when_missing": null
+        }
+      ],
+      "desire_but": {
+        "p1_p2_result": null,
+        "p3_missing_pain": null,
+        "p2_p3_result": null,
+        "p1_missing_pain": null,
+        "p1_p3_result": null,
+        "p2_missing_pain": null,
+        "all_combined_result": null
+      },
+      "drawing_notes": null
+    },
+    "deeper_purpose": {
+      "statement": null,
+      "one_liner": null,
+      "change_i_want_to_see": null,
+      "stage_moment": null,
+      "top_results": [
+        {
+          "result": null,
+          "life_change": null
+        }
+      ]
+    },
+    "diagnosis": {
+      "symptoms": [],
+      "causes": [],
+      "advice_causing_it": [],
+      "common_enemy": {
+        "name": null,
+        "description": null
+      }
+    },
+    "specific_library": {
+      "feelings": [],
+      "mistakes": [
+        {
+          "mistake": null,
+          "causes": null,
+          "they_know_it_hurts": null,
+          "typical_duration": null
+        }
+      ],
+      "pains": [],
+      "desires": [],
+      "time_based_identifiers": []
+    },
+    "proof_bank": {
+      "counter_examples": [
+        {
+          "who_or_what": null,
+          "what_they_did": null,
+          "belief_it_disproves": null
+        }
+      ],
+      "metaphors_analogies": [],
+      "stories": [
+        {
+          "title": null,
+          "summary": null,
+          "lesson": null
+        }
+      ],
+      "case_studies": [
+        {
+          "who": null,
+          "before": null,
+          "after": null,
+          "timeframe": null
+        }
+      ],
+      "stats": [
+        {
+          "stat": null,
+          "source": null
+        }
+      ]
+    },
+    "offers_and_ctas": {
+      "lead_magnet": {
+        "name": null,
+        "small_tangible_promise": null,
+        "how_to_get": null
+      },
+      "core_offer": {
+        "name": null,
+        "bigger_promise": null,
+        "whats_inside": [],
+        "not_covered_in_free_content": [],
+        "problems_when_missing": []
+      },
+      "default_cta": null,
+      "soft_cta": null
+    },
+    "_notes": {
+      "creator.expertise": "what you actually do and have done — the ground your mastery stands on",
+      "creator.languages": "e.g. [en, sk] — first one is the default script language",
+      "creator.platforms.main": "ONE hub: instagram | youtube | podcast | tiktok | linkedin | facebook",
+      "creator.platforms.secondary": "where hub content gets repurposed",
+      "creator.niche_state": "stagnant | ready_for_change  -> picks framework.content_mix",
+      "creator.messaging_level": "1-6 -> tunes emphasis (framework.evolution.messaging_levels)",
+      "voice": "how YOU talk. The creator is the light that attracts the audience.",
+      "voice.tone_words": "e.g. direct, warm, playful, calm authority",
+      "voice.energy": "e.g. calm teacher | fired-up coach | dry humor",
+      "voice.signature_phrases": "things you actually say",
+      "voice.profanity": "none | light | natural",
+      "voice.sample_transcript": "150-300 words of you talking naturally (transcript, not polished copy). Strongest voice signal.",
+      "identity": "S1 \"Remembering who you are\" — content is built from this, not from audience surveys",
+      "identity.core_values": "top 5 you want inside the business (they attract people like you)",
+      "identity.identities": "top 3 you want visible: parent, entrepreneur, athlete, traveler…",
+      "identity.things_i_want_to_say": "what you've held back out of fear of judgment / haters",
+      "identity.silence_notes": "raw ideas that came in silence, shower, walks, journaling — unfiltered",
+      "identity.natural_ability": "what you \"just get\" faster than most (zone of genius)",
+      "identity.mastery.lived_experience": "things you've actually done, repeatedly (deeper KNOWing) — story fuel",
+      "identity.mastery.failures_and_lessons": "feeds Top Mistakes content, stories, proof",
+      "identity.mastery.failures_and_lessons[0].why_i_did_it": "what you thought you'd gain",
+      "identity.mastery.original_ip": "terms / frameworks / methods unique in FUNCTION, not just renamed",
+      "identity.boundaries": "Personal Power — hard lines the model must never cross",
+      "identity.boundaries.topics_off_limits": "e.g. politics, trending news unrelated to your message",
+      "identity.boundaries.never_do": "e.g. name competitors, apologize for a stance, mock the audience",
+      "identity.boundaries.audience_never_gets": "emotional boundary, e.g. my anger, my worry — keeps tone secure, not defensive",
+      "struggling_avatar": "SA — an identity the audience adopts as their own label AND wants to leave",
+      "struggling_avatar.name": "adjective(s) + identity noun, e.g. \"Overwhelmed Educator\". Softer: positive-negative combo (\"Struggling but Optimistic Wanderer\")",
+      "struggling_avatar.identity_noun": "entrepreneur | mom | athlete | host | teacher …",
+      "struggling_avatar.source": "me_earlier (default — an older version of you) | favorite_client (if you never lived it)",
+      "struggling_avatar.struggles_and_emotions": "before the transformation, e.g. burnout, lost, working hard, stuck",
+      "struggling_avatar.description": "2-4 sentences in THEIR words — how they think, what they do, how it feels",
+      "future_paced_hero": "FPH — the identity they desire; ideally where you are now",
+      "future_paced_hero.name": "e.g. \"Powerful Founder\". Tip: echo the method name (\"Powerful Founder\" <-> \"Powerful Founders Method\")",
+      "future_paced_hero.transformation": "adjective | noun | both   (lost business owner -> powerful CEO = both)",
+      "future_paced_hero.outcomes": "1-3 word outcomes they want",
+      "future_paced_hero.feelings": "how they feel once they have the result",
+      "future_paced_hero.movement_name": "optional — a movement you want to create",
+      "unique_solution": "the bridge SA -> FPH; the northstar every TR / WTD piece points to",
+      "unique_solution.name": "FPH (or theme) + Effect | Method | Process | Solution",
+      "unique_solution.type": "element (ingredients that must combine, any order) | framework (ordered steps)",
+      "unique_solution.simple_promise": "the main PROBLEM it solves (not what you do)",
+      "unique_solution.what_makes_it_unique": "1-2 things",
+      "unique_solution.passes_10_expert_test": "true if 10 other experts asked for a process would NOT give you the same steps",
+      "unique_solution.pillars": "3 to 5",
+      "unique_solution.pillars[0].pain_when_missing": "feeds desire_but + one_and_more",
+      "unique_solution.desire_but": "optional — model derives from pillars if empty (3-pillar version)",
+      "unique_solution.desire_but.all_combined_result": "the result they want most",
+      "unique_solution.drawing_notes": "how you draw / explain it on a whiteboard (for visuals)",
+      "deeper_purpose": "NOT a result. The effect left on the world when 10,000 people get your result.",
+      "deeper_purpose.statement": "3-4 sentences",
+      "deeper_purpose.change_i_want_to_see": "in the world / nation / town / industry",
+      "deeper_purpose.stage_moment": "you crushed it on stage, people said it changed their life — what did you talk about?",
+      "deeper_purpose.top_results": "helper: your 3 strongest client results and how their lives (and people around them) change",
+      "diagnosis": "be the one who \"discovers the illness\" — whoever names it is who they go to for the cure",
+      "diagnosis.symptoms": "specific pain, e.g. \"posting 4+ times a week, content is good, still blending in\"",
+      "diagnosis.causes": "what they specifically do that creates it, e.g. \"70%+ of posts are tutorials\"",
+      "diagnosis.advice_causing_it": "popular advice that keeps the problem alive",
+      "diagnosis.common_enemy.name": "your name for the problem — you and the audience rally against it",
+      "specific_library": "fuel for every pattern. REAL, accurately specific: numbers, time frames, frequencies, measurements",
+      "specific_library.feelings": "say the feeling without naming it, e.g. \"refresh views every 20 minutes after posting\"",
+      "specific_library.mistakes[0]": "the specific action",
+      "specific_library.mistakes[0].causes": "the specific pain it creates",
+      "specific_library.mistakes[0].they_know_it_hurts": "false = hidden cause (strongest material: they never linked THIS to THAT)",
+      "specific_library.mistakes[0].typical_duration": "e.g. \"3+ months\"",
+      "specific_library.pains": "extra pains not tied to a single mistake",
+      "specific_library.desires": "specific things they want / things you now have",
+      "specific_library.time_based_identifiers": "ready lines — \"if you've been {pain} for more than {time}…\"",
+      "proof_bank": "the ONLY evidence the model may cite",
+      "proof_bank.counter_examples": "well-known 3rd parties the audience recognizes; must be DOING your solution",
+      "proof_bank.counter_examples[0]": "person, company, book, film, historical moment",
+      "proof_bank.metaphors_analogies": "e.g. \"metabolism is like a fingerprint\"",
+      "proof_bank.stories": "your own — origin, turning points, client wins, failures",
+      "proof_bank.case_studies": "real results, with permission",
+      "proof_bank.stats": "use sparingly — persuasion beats statistics",
+      "offers_and_ctas.lead_magnet": "free training, webinar, video series, guide, challenge",
+      "offers_and_ctas.lead_magnet.small_tangible_promise": "deliverable + result (+ timeframe) — see framework.sales_mechanisms",
+      "offers_and_ctas.lead_magnet.how_to_get": "link in bio | comment KEYWORD | DM | URL",
+      "offers_and_ctas.core_offer.not_covered_in_free_content": "what free content deliberately leaves out",
+      "offers_and_ctas.core_offer.problems_when_missing": "problems that appear without those parts -> one_and_more, new bigger promise",
+      "offers_and_ctas.default_cta": "used when generation_request.cta is empty",
+      "offers_and_ctas.soft_cta": "follow / save / share / comment"
+    }
+  },
+  "topic_bank": {
+    "belief_map": [
+      {
+        "problem": null,
+        "action": null,
+        "belief": null,
+        "core_belief": null,
+        "causes_suffering_70": null,
+        "works_for_30": null
+      }
+    ],
+    "per_scope": [
+      {
+        "scope": null,
+        "misconceptions": [],
+        "outdated_norms": [],
+        "limiting_beliefs": [],
+        "objections_to_listening": [],
+        "objections_to_buying": [],
+        "most_backwards_thing": null,
+        "elements_or_steps": [],
+        "framework": null,
+        "effect_when_dialed_in": null,
+        "beliefs_to_stand_up_for": [],
+        "biggest_change_wanted": null,
+        "shared_beliefs": []
+      }
+    ],
+    "topics": {
+      "thought_reversal": [],
+      "what_to_do": [],
+      "connection": {
+        "deeper_purpose": [],
+        "traditional": [],
+        "identity": []
+      },
+      "self_identifying_education": []
+    },
+    "performance_log": [
+      {
+        "title": null,
+        "content_type": null,
+        "format": null,
+        "signals": null,
+        "verdict": null
+      }
+    ],
+    "_notes": {
+      "belief_map": "Exercise 1 — work backwards: specific problem -> action -> belief behind it",
+      "belief_map[0]": "e.g. \"flat audience and sales for 3+ months\"",
+      "belief_map[0].action": "what they do (or don't do) that causes it",
+      "belief_map[0].belief": "the belief / norm that drives the action",
+      "belief_map[0].core_belief": "the root, stripped down (used by context_switch), e.g. \"information = results\"",
+      "belief_map[0].causes_suffering_70": "true if it hurts 70%+ of people who hold it",
+      "belief_map[0].works_for_30": "true if it genuinely works for 30%+ -> pet peeve, don't reverse it",
+      "per_scope": "Exercise 2 — once for the whole unique solution, then once per pillar",
+      "per_scope[0]": "unique_solution | <pillar name>",
+      "per_scope[0].misconceptions": "what the outside world gets wrong",
+      "per_scope[0].outdated_norms": "\"the way it's done\" that is now bad / old",
+      "per_scope[0].limiting_beliefs": "the SA's own limiting beliefs about this",
+      "per_scope[0].elements_or_steps": "what makes this work",
+      "per_scope[0].framework": "the process, if there is one",
+      "per_scope[0].effect_when_dialed_in": "deeper-purpose effect",
+      "per_scope[0].beliefs_to_stand_up_for": "beliefs about the SA they'd LOVE you to defend",
+      "per_scope[0].shared_beliefs": "you + SA + FPH all believe these",
+      "topics": "shortlist — topics, not titles",
+      "topics.thought_reversal": "up to 10",
+      "topics.what_to_do": "up to 10",
+      "topics.connection.traditional": "beliefs the SA shares that relate to your work",
+      "topics.connection.identity": "3-4 personal themes (behind the scenes, family, training, travel…)",
+      "performance_log": "S4 — what worked. Winners become campaign angles and title retests.",
+      "performance_log[0].signals": "avg watch time, saves, shares, comments, ThruPlay cost",
+      "performance_log[0].verdict": "winner | retest_new_title | retest_new_angle | drop"
+    }
+  },
+  "generation_request": {
+    "mode": null,
+    "content_type": null,
+    "template": null,
+    "topic": null,
+    "target_belief": null,
+    "pillar": null,
+    "format": null,
+    "platform": null,
+    "length": null,
+    "language": null,
+    "title_style": null,
+    "aggression": null,
+    "patterns_to_use": [],
+    "cta": null,
+    "cta_custom": null,
+    "audience_awareness": null,
+    "variants": 3,
+    "source_transcript": null,
+    "notes": null,
+    "_notes": {
+      "mode": "script (default) | titles_only | topic_ideation | outline | repurpose",
+      "content_type": "thought_reversal | what_to_do | connection | experimental_story | sales_mechanism",
+      "template": "e.g. thought_reversal.og — empty = model picks via framework.routing and says why",
+      "target_belief": "TR: the ONE belief to reverse",
+      "pillar": "which unique_solution pillar this serves (TR / WTD)",
+      "format": "reel_short | video_long | live | image_post | slider | podcast_episode | email | ad | webinar_segment | video_series_segment | sales_video | caption_only",
+      "length": "seconds (video) | slides (slider) | words (caption, email)",
+      "language": "overrides creator.languages[0]; \"bilingual\" = spoken in one, caption in both",
+      "title_style": "see framework.titles — empty = mix styles across variants",
+      "aggression": "auto | low | medium | high   (auto = from niche_state)",
+      "patterns_to_use": "force language patterns, e.g. [context_switch, time_based_identifier]",
+      "cta": "lead_magnet | core_offer | soft | none | custom",
+      "audience_awareness": "optional: unaware | problem_aware | solution_aware | product_aware | most_aware",
+      "variants": "title / hook variants to test \"how to say it\"",
+      "source_transcript": "repurpose / documentation mode: paste the staple piece or talk"
+    }
+  },
+  "framework": {
+    "llm_procedure": {
+      "role": "You are a scriptwriter trained in the New Generation Mastery messaging framework. You write in the creator's own voice, from their identity and stance, to move viewers from unaware to aware and create demand for the creator's unique solution.\n",
+      "steps": [
+        "Read generation_request and resolve mode, content_type, template (framework.routing if empty), format adapter, length, language",
+        "Pull the relevant ecosystem elements (SA, FPH, unique solution or pillar, common enemy, deeper purpose)",
+        "Pull real specifics from specific_library and proof from proof_bank that fit this topic (2+ for short form, 4+ for long form)",
+        "For sales pieces, check topic_bank.performance_log and reuse winning titles, angles and language",
+        "Write title variants with framework.titles for the content type",
+        "Draft section by section following the template steps, embedding the named language patterns",
+        "Adapt to the format (length, on-screen text, caption, slides)",
+        "Run quality_checklist, fix what fails, and list anything missing in needs",
+        "Return exactly the output_spec shape and nothing else"
+      ],
+      "audience_facing_language": [
+        "Never put internal terms in spoken text or captions (struggling avatar, future paced hero, thought reversal, SOM, CTA, pillar, ecosystem) unless the creator's audience uses them",
+        "SA and FPH NAMES are used naturally as identities (\"most {SA name}s do X\"); the method name and common enemy name are used as proper nouns",
+        "Write for the ear — short sentences, contractions, rhythm, the creator's own phrases",
+        "Never label steps out loud (\"step 3, the discredit…\")"
+      ]
+    },
+    "principles": {
+      "speak_to_the_subconscious": "Aim for automatic reactions (\"that's me\", \"never thought of it like that\", \"that makes so much sense\") instead of a logical debate. Pure information makes the viewer evaluate; great content makes them feel. Encyclopedias are full of information and never top the bestseller lists.\n",
+      "stop_the_automation": {
+        "idea": "People run on beliefs their subconscious automated without critical thought. Each piece interrupts ONE automation, moves the viewer from unaware to aware, and hands them a better belief. More steps and tutorials usually reinforce the old automation instead.\n",
+        "how_beliefs_get_automated": [
+          "trusted_authority",
+          "repetition",
+          "its_always_been_done"
+        ]
+      },
+      "persuade_dont_explain": {
+        "explaining_looks_like": [
+          "justifying your point",
+          "listing benefits to convince",
+          "stating something and moving on",
+          "citing stats as the selling point",
+          "here's why you need my solution"
+        ],
+        "persuading_looks_like": [
+          "showing the belief's flaw from an angle they never saw",
+          "undeniable proof or a counter example",
+          "getting the head-nod",
+          "showing the other options are flawed instead of praising yours"
+        ]
+      },
+      "beliefs_not_opinions": "Target what people hold as TRUTH without having questioned it. Never argue an opinion to be right. The creator's opinion never needs to appear — the belief's flaw does the work.\n",
+      "accurate_specificity": "Vague lets the subconscious escape (\"not relevant to me\"). Specific doesn't. Use numbers, time frames, frequencies, measurements and real behaviors from the specific library, chosen so they are true for most of the audience. Say \"overwhelmed\" without saying overwhelmed.\n",
+      "compassion_and_personal_power": "Secure, never defensive. Show the flaws of OLD METHODS that cause suffering — never call out, cancel, mock or complain about people. Acknowledge why someone holds a belief before discrediting it. Aim every discredit at the belief, never at the viewer's worth.\n",
+      "personal_power_red_flags": [
+        "posts about what other people do (unless praising and sharing their work)",
+        "calling people out or canceling them",
+        "riding media trends unrelated to the creator's message and impact",
+        "choosing what to say based on how people might react",
+        "apologizing for a stance that doesn't need an apology",
+        "messages that won't be true in 5 years"
+      ],
+      "creator_is_the_light": "The creator's identities, values and beliefs attract the audience. Write from their stance; don't water it down to please everyone. Repelling people who don't share the values is a feature.\n",
+      "teach_what_not_how": "Free content teaches WHAT to do and why. The full HOW lives in the offer. Teaching everything overwhelms people or convinces them they already have all they need.\n",
+      "northstar_consistency": "Every Thought Reversal and What-To-Do piece connects to the unique solution or one of its pillars. No random topics. Connection content ties to the deeper purpose, core values or identities.\n",
+      "three_jobs_of_content": [
+        "get eyeballs (title)",
+        "keep eyeballs (subconscious communication)",
+        "create demand (remove a belief -> desire for the new way)"
+      ],
+      "ecosystem_not_single_piece": "Messaging is experienced over many pieces. One script does one job well and doesn't need to carry the whole message.\n",
+      "evolution_70_percent": "70% perfect is perfect. Every script is a test of WHAT to say and HOW to say it, so always offer title and hook variants.\n",
+      "no_fabrication": "The workbook's specifics land because they are real. Use only specifics, stories, stats and results from brand_context and topic_bank. Counter examples must be real and widely known. If something is missing, write [NEEDS: field.path] — never invent it.\n"
+    },
+    "ecosystem": {
+      "model": "A house on a street full of houses. The title is the blue door that gets someone inside. Once inside, every element across many pieces makes them FEEL whether this is the right house.\n",
+      "elements": {
+        "struggling_avatar": "Identity the audience self-labels as and does NOT want to stay. Built from an older version of the creator.",
+        "future_paced_hero": "Identity they desire. Comes out the other side of the unique solution.",
+        "unique_solution": "The creator's own method (3-5 pillars) that bridges SA to FPH. Separates them from \"an expert in a sea of experts\".",
+        "deeper_purpose": "The why behind the work — the effect on the world, not the client result. Powers connection.",
+        "diagnosis_and_common_enemy": "The named cause of their pain. Naming it makes the creator the one to fix it and unites the audience against it.",
+        "specific_library": "Real feelings, mistakes, pains, desires. What makes the subconscious say \"that's me\".",
+        "thought_reversal_content": "Shifts perspective by ending a belief that causes suffering. Builds thought leadership and brings people in.",
+        "connection_content": "Builds know-like-trust by rallying around shared beliefs, values and identities.",
+        "what_to_do_content": "Educates from mastery, always tied to the unique solution.",
+        "titles": "The blue door. Stop the scroll, then the ecosystem does the rest."
+      },
+      "usage_rules": [
+        "When listing a mistake, problem, myth or consequence, tie it to the SA identity so viewers adopt the label",
+        "Present the FPH as the destination identity (\"this is what {FPH name}s do\")",
+        "Name the unique solution when it bridges the gap; name the common enemy when describing the cause",
+        "Use labels naturally — a label in every sentence reads as a gimmick"
+      ]
+    },
+    "evolution": {
+      "messaging_levels": {
+        "1": {
+          "name": "Unheard",
+          "symptom": "helpful content nobody watches; flat for 3+ months",
+          "cause": "70%+ information / tutorial content, generalized, topics chosen by what the audience says it wants",
+          "emphasize": [
+            "stronger titles",
+            "thought reversals",
+            "accurate specificity"
+          ]
+        },
+        "2": {
+          "name": "Seen",
+          "symptom": "titles get attention, but viewers don't stay, engage or convert",
+          "cause": "titles improved, scripts don't hold attention or create the head-nod",
+          "emphasize": [
+            "full TR structures",
+            "head-nod discredits",
+            "subconscious patterns"
+          ]
+        },
+        "3": {
+          "name": "Heard",
+          "symptom": "engagement and DMs, but sales inconsistent",
+          "cause": "focused on being different rather than creating demand; no own IP or named solution yet",
+          "emphasize": [
+            "demand creation",
+            "one_and_more",
+            "desire_but",
+            "diagnosis_reveal",
+            "name the unique solution"
+          ]
+        },
+        "4": {
+          "name": "Hustle-selling",
+          "symptom": "fairly consistent but unscalable sales via big efforts and small launches; cold traffic doesn't convert",
+          "cause": "still too much teaching; not specific enough that people FEEL the creator solves their suffering",
+          "emphasize": [
+            "deeper specificity",
+            "the method over knowledge",
+            "small tangible promises"
+          ]
+        },
+        "5": {
+          "name": "Scalable",
+          "symptom": "predictable growth, cold traffic converts, people ask how to work together before the pitch",
+          "cause": "deep specificity and action — but still educating an existing industry",
+          "emphasize": [
+            "improving change",
+            "original IP",
+            "industry-level reversals"
+          ]
+        },
+        "6": {
+          "name": "New Generation Mastery",
+          "symptom": "people cite the creator's \"work\", others teach it, \"you changed my life\" is common",
+          "cause": "full alignment and critical thinking; creating a new way instead of regurgitating",
+          "emphasize": [
+            "original frameworks",
+            "timeless connection",
+            "industry-shifting reversals"
+          ]
+        }
+      }
+    },
+    "content_mix": {
+      "stagnant_niche": {
+        "thought_reversal": 15,
+        "connection": 30,
+        "what_to_do": 45,
+        "experimental_story": 10
+      },
+      "ready_for_change_niche": {
+        "thought_reversal": 25,
+        "connection": 25,
+        "what_to_do": 40,
+        "experimental_story": 10
+      },
+      "thought_reversal_cap": 40,
+      "thought_reversal_formats": {
+        "og": 33,
+        "context_switch": 33,
+        "self_identify": 33
+      },
+      "video_share": 50,
+      "experimental_story_note": "Vlogs, behind the scenes, entertainment — test freely. Story pieces still belong to one of the three types."
+    },
+    "language_patterns": {
+      "som": {
+        "purpose": "Discredit a belief so it can't be argued with. The core of every TR discredit and every objection.",
+        "follow_up_enhancer": "Can you find me any {successful_example_group} that didn't {do_the_solution}?",
+        "default_picks": [
+          "counter_example",
+          "chunk_up"
+        ],
+        "patterns": {
+          "chunk_up": {
+            "move": "Apply the belief to everyone, 100% of the time, and let it collapse.",
+            "template": "If {belief} were true, everyone who {does_it} would {get_result}, right? We know that isn't the case."
+          },
+          "chunk_down": {
+            "move": "Point to one specific time the belief wasn't true.",
+            "template": "Has there ever been a time you {did_the_belief} and still didn't {get_result}?"
+          },
+          "metaphor_analogy": {
+            "move": "Show the flaw through a comparison.",
+            "template": "That's like {parallel_action} — {why_it_fails}."
+          },
+          "counter_example": {
+            "move": "A well-known third-party example where the belief fails AND the solution is being used. Not your own testimonial. Avoid stats.",
+            "template": "{known_person_or_thing} {got_the_result} without ever {doing_the_belief}. Instead they {did_the_solution}."
+          },
+          "hierarchy_of_criteria": {
+            "move": "Move their focus to something more important.",
+            "template": "Isn't it more important to focus on {higher_value} than on {belief_focus}?"
+          },
+          "change_frame_size": {
+            "move": "Enlarge or shrink the frame until the belief looks insignificant, or ask them to define it.",
+            "template": "How much {belief_measure} counts as enough? If {big_outcome} happened, would {belief} still matter?"
+          },
+          "meta_frame": {
+            "move": "Challenge where the belief came from.",
+            "template": "Is that really yours, or something you heard from {source} so many times it started to feel true?",
+            "caution": "The workbook's harsher versions question the person's character. In public content, question the belief's source — never shame the viewer."
+          },
+          "consequence": {
+            "move": "Shift attention to where the belief leads. Also reinforces beliefs you want kept.",
+            "template": "What happens if you hold on to {belief} for another {timeframe}? {real_consequence}."
+          },
+          "intention": {
+            "move": "Acknowledge the positive intent, then show the flaw.",
+            "template": "I know the intention is {positive_intent}, but doesn't {belief} end up {negative_effect}?"
+          },
+          "another_outcome": {
+            "move": "Reveal it's really about something else, which makes letting go easier.",
+            "template": "Is this really about {surface_topic}, or about {real_issue}?"
+          },
+          "reality_strategy": {
+            "move": "Ask how, specifically, the belief is true and where it comes from.",
+            "template": "How specifically does {belief} lead to {result}? Which {part} exactly?"
+          },
+          "model_of_the_world": {
+            "move": "Present another widely held perspective that pulls them off theirs.",
+            "template": "Did you know most {successful_group} say {different_view} is what actually made the difference?"
+          }
+        }
+      },
+      "desire_but": {
+        "purpose": "Explain the unique solution AND create demand for it — shows why every pillar is needed and which pillar fixes their current pain.",
+        "uses": [
+          "sales presentations",
+          "sales pages",
+          "webinars",
+          "video series",
+          "standalone WTD piece"
+        ],
+        "logic": "For each pair of pillars, state the desire they produce together, BUT the pain that remains because the third is missing. Then all together gives the result they want most.",
+        "template": "When you have {p1} and {p2} you get {p1_p2_result}, but without {p3} you'll still face {p3_missing_pain}. With {p2} and {p3} you get {p2_p3_result}, but without {p1} you'll {p1_missing_pain}. With {p1} and {p3} you get {p1_p3_result}, but without {p2} you'll {p2_missing_pain}. Put all of them together and you get {all_combined_result}. They only work together, which is why you've probably been feeling {current_pain}.\n",
+        "more_than_3_pillars": "Same logic, more concise.",
+        "source_fields": "brand_context.unique_solution.desire_but (derive from pillars if empty)"
+      },
+      "list_method": {
+        "purpose": "Make them feel automatically that you understand the problem, why it exists, and can fix it — without saying you have the solution.",
+        "uses": [
+          "IG sliders",
+          "emails",
+          "ads",
+          "sales mechanisms",
+          "image and video content",
+          "podcast hooks",
+          "right before revealing a step"
+        ],
+        "variants": {
+          "pain_to_cause": "If you're {specific_pain_1}, {specific_pain_2}, or {specific_pain_3}… then I guarantee you're doing at least one of these: {specific_action_1}, {specific_action_2}, {specific_action_3}. Am I right?",
+          "cause_to_pain": "If you're doing even one of these — {specific_action_1}, {specific_action_2}, {specific_action_3} — then I guarantee you're {specific_pain}. Am I right?"
+        },
+        "strongest_material": "mistakes with they_know_it_hurts = false (hidden causes)",
+        "combine_with": "time_based_identifier"
+      },
+      "one_and_more": {
+        "purpose": "Teach one thing while telling the subconscious there's more in the offer or next step. Makes them WANT the teaching before it starts.",
+        "uses": [
+          "before any teaching",
+          "webinars",
+          "video series",
+          "challenges",
+          "podcasts",
+          "emails",
+          "persuasive tutorial step intros"
+        ],
+        "steps": [
+          "Promise — I'm about to show you {promise}.",
+          "Specific mistakes — Most people {specific_mistakes}.",
+          "Specific pain — And because of that {specific_pain}.",
+          "Sell without selling — There are {n} ways / steps to this inside {offer_or_next_step}…",
+          "Remove the selling (optional in content, use in sales mechanisms) — …but I'm giving you my favorite one right now because {reason}, and with it you'll {result} {by_when}."
+        ]
+      },
+      "time_based_identifier": {
+        "purpose": "Get accurately specific fast so the right person self-identifies.",
+        "template": "If you've been {specific_pain} for more than {time}, then you're {specific_action_or_non_action}.",
+        "tip": "Pick one problem and a timeframe that is true for most of the audience."
+      },
+      "roa_method": {
+        "purpose": "Position the creator's solution as the only viable option by discrediting the alternatives.",
+        "uses": [
+          "podcasts",
+          "webinars",
+          "video series",
+          "emails",
+          "longer content"
+        ],
+        "steps": [
+          "Desired results + mistakes — paint the result they want, then the mistakes stopping it",
+          "Options — list the options they're considering (including yours); discredit each alternative with a question it can't survive; yours remains",
+          "Objections as actions — voice what people think or do when trying your option (fear, gear, doubt) and remove it with SOM (chunk up, counter example)",
+          "CTA — how to get your solution and do it right"
+        ]
+      },
+      "context_switch": {
+        "purpose": "Put the belief into a context where it's obviously false. The automation stops and they think critically (\"never thought of it like that\").",
+        "steps": [
+          "Core belief — reduce the belief to its root (e.g. \"how-to content builds an audience\" -> \"information = results\")",
+          "Contexts — find 2-3 situations where that root belief is clearly not true",
+          "No-questions — ask each as a question whose answer is \"no\"",
+          "Bridge — \"So why do you do the same thing in your {business/life}?\" + name exactly how they're doing it"
+        ],
+        "uses": [
+          "thought reversals",
+          "webinars",
+          "ads",
+          "emails",
+          "images",
+          "copy",
+          "objection handling"
+        ]
+      },
+      "self_identifying": {
+        "purpose": "Specific problems + specific cause + a label, so they categorize themselves and assume you hold the fix.",
+        "structures": {
+          "label_last": "{specific problems} + {specific cause} -> if that's you, you're {label}",
+          "label_first": "You're probably dealing with {label} if {specific problems} — and it usually means {specific cause}."
+        },
+        "labels_from": [
+          "struggling_avatar.name",
+          "diagnosis.common_enemy.name",
+          "custom categories"
+        ],
+        "requirement": "Accurately specific behaviors, causes and emotions. The specificity triggers \"that's me\"."
+      },
+      "explaining_the_unexplained": {
+        "purpose": "Give words to a pain they live with but can't explain. The realization itself is the value.",
+        "steps": [
+          "find a pain they haven't solved",
+          "explain what causes it",
+          "combine into one statement"
+        ],
+        "template": "{pain they deal with} happens when {cause}, because {mechanism}."
+      },
+      "diagnosis_reveal": {
+        "purpose": "Like the first doctor to identify an unknown illness — describe the symptoms and causes so accurately, then NAME it, that the creator becomes the obvious one to fix it. The name becomes a common enemy the creator and audience rally against.\n",
+        "steps": [
+          "specific symptoms",
+          "specific actions causing them",
+          "the popular advice keeping it alive",
+          "name it (common enemy)",
+          "signal that it's fixable"
+        ],
+        "source_fields": "brand_context.diagnosis"
+      }
+    },
+    "titles": {
+      "rules": [
+        "Choose aggression by what the NICHE responds to, not the creator's comfort",
+        "One belief per TR title; beliefs, not opinions",
+        "Always return variants so WHAT to say and HOW to say it can be tested",
+        "Mix title styles across pieces"
+      ],
+      "thought_reversal": {
+        "aggressive": "{belief} is the worst way to {desired_result}",
+        "statement": "{belief_action} isn't how to {desired_result}",
+        "gentle": "{solution} gets you more {desired_result} than {belief}",
+        "question": "Is {belief} really the best way to {desired_result}?"
+      },
+      "connection": {
+        "should_need": "{identity or core value} {should | do | need to | always} {belief}",
+        "create_make": "{identity or core value} {create | make} {what you create or want to create}",
+        "note": "Identity connection posts usually need no title — image + caption."
+      },
+      "what_to_do": {
+        "how_to": "How to {result}",
+        "without": "How to {result} without {common mistake or disliked task}",
+        "fixing": "How to fix / stop {problem}",
+        "fixing_without": "How to fix {problem} without {common mistake}"
+      },
+      "sales_mechanism": {
+        "webinar_or_series": "How to {benefit} without {common belief}",
+        "lead_magnet_promise": "{deliverable} that {result} within {timeframe}",
+        "ad_headlines": [
+          "a TR title (only when the creative has no title bar)",
+          "[NEW {MECHANISM}] {benefit} without {what they're doing now}"
+        ],
+        "email_subjects": [
+          "the TR title",
+          "the webinar-style title",
+          "optional [FREE WEBINAR] prefix"
+        ]
+      }
+    },
+    "topic_discovery": {
+      "belief_chain": "Beliefs create actions, actions create results. Start from specific problems and work backwards to action, then belief.",
+      "pet_peeve_filter": {
+        "keep_if": "the belief causes suffering for 70%+ of the people who hold it",
+        "drop_if": "the belief genuinely works for 30%+ of people (a pet peeve, not a reversal)"
+      },
+      "thought_reversal_topics": "Up to 5 of the most relatable beliefs from belief_map, then fill to 10 from misconceptions, outdated norms, limiting beliefs, objections (listening and buying) and the most backwards thing.",
+      "what_to_do_topics": "Up to 5 as \"how to fix {problem}\" from belief_map problems, then fill to 10 from elements/steps and framework. Pick what MOST people need, not favorites.",
+      "connection_topics": "Deeper purpose + beliefs the SA shares that aren't about the offer + 3-4 identity themes.",
+      "self_identifying_education_topics": "Take how-to or TR topics that exist because of a misconception. Ask \"why?\" and \"where else does this happen?\" to find more misconceptions, then title for curiosity.\n"
+    },
+    "routing": {
+      "thought_reversal": {
+        "default": "og",
+        "context_switch_when": "the core belief has an obvious everyday parallel where it's clearly false — great for short form",
+        "self_identify_when": "requested, or messaging_level is 3+ (advanced — OG and context switch come first)",
+        "podcast_tr_when": "format is podcast_episode or a live longer than 15 min"
+      },
+      "what_to_do": {
+        "persuasive_tutorial_when": "the topic has real steps (pillar or framework)",
+        "statement_and_example_when": "a strong story or case exists in proof_bank",
+        "top_mistakes_when": "failures_and_lessons has material on the topic",
+        "breakdown_review_when": "a showable example with clout exists",
+        "self_identifying_education_when": "the topic exists because of a misconception; format is slider or caption",
+        "documentation_when": "a source_transcript is supplied"
+      },
+      "connection": {
+        "format_2_stand_for_when": "short form, deeper purpose",
+        "format_1_rally_when": "longer pieces, movements, future pacing",
+        "format_3_interview_when": "the creator will record answers",
+        "format_4_passion_write_when": "the creator supplies a raw letter"
+      },
+      "by_messaging_level": "evolution.messaging_levels -> emphasize",
+      "by_awareness": "crosswalk.awareness_stage_to_ngm"
+    },
+    "script_templates": {
+      "thought_reversal": {
+        "intent": "End suffering by reversing ONE belief or norm that causes the problem, then move them to the better way. Most TRs turn educational in the second half — they still count as TR because the intent is the perspective shift.\n",
+        "dos": [
+          "Keep topics tied to the business or the change the creator wants in the world",
+          "Persuade — show how the old way is flawed rather than proving you're right",
+          "Use ACTUAL beliefs, not pet peeves",
+          "Always move them to the better way after the discredit"
+        ],
+        "donts": [
+          "Don't state an opinion and move on",
+          "Don't explain, especially at the start — if you're justifying why your way is right, you've lost",
+          "Don't aim to prove someone wrong; aim to end suffering and cause good change",
+          "Don't go outside the niche"
+        ],
+        "og": {
+          "steps": [
+            {
+              "step": "1 · Belief is wrong",
+              "do": "Open against the belief — wrong, bad, outdated, or the old way to get {desired_result}. Usually mirrors the title."
+            },
+            {
+              "step": "2 · Live in compassion",
+              "do": "They'll want to defend it. Show you understand why they believe it and where it came from (authority, repetition, \"always done this way\")."
+            },
+            {
+              "step": "3 · Discredit",
+              "do": "The most important step. Use SOM so it can't be argued. A counter example must be DOING the solution. Default to counter_example or chunk_up."
+            },
+            {
+              "step": "4 · Further the pain",
+              "optional": true,
+              "do": "What keeps happening if they hold on to the belief — specific and real."
+            },
+            {
+              "step": "5a · Solution",
+              "do": "They now want the new way. Deliver it as a short What-To-Do (what, not the full how)."
+            },
+            {
+              "step": "5b · Or motivational turn",
+              "alternative_to": "5a",
+              "do": "Instead of teaching, use hierarchy_of_criteria and questions to lift them off the old perspective."
+            },
+            {
+              "step": "6 · Make them choose",
+              "do": "Keep {old belief} and {pain}, or move to {new way} and {benefit}?"
+            },
+            {
+              "step": "7 · CTA",
+              "do": "Where to go next."
+            }
+          ]
+        },
+        "context_switch": {
+          "steps": [
+            {
+              "step": "1 · Core belief",
+              "do": "Reduce the belief to its root (internal prep — not spoken)."
+            },
+            {
+              "step": "2 · Context questions",
+              "do": "2-3 questions from contexts where the root belief is clearly false, each answered with \"no\"."
+            },
+            {
+              "step": "3 · Bridge",
+              "do": "Ask \"so why do you do the same thing in your {business/life}?\" + name exactly how they're doing it."
+            },
+            {
+              "step": "4 · Further the pain",
+              "optional": true,
+              "do": "Same as og step 4."
+            },
+            {
+              "step": "5 · Solution",
+              "do": "Same as og step 5a."
+            },
+            {
+              "step": "6 · Make them choose",
+              "do": "Same as og step 6."
+            },
+            {
+              "step": "7 · CTA",
+              "do": "Same as og step 7."
+            }
+          ]
+        },
+        "self_identify": {
+          "steps": [
+            {
+              "step": "1 · Self-identify",
+              "do": "Open with \"there are {3-5} things almost every {identity} does that {bigger problem}…\" then list them with precise specifics. Brainstorm 10, keep the 3-5 the solution fixes."
+            },
+            {
+              "step": "2 · Awareness to the cause",
+              "do": "3-6 sentences max, stated as facts, on why those mistakes cause the problem. Longer means over-explaining."
+            },
+            {
+              "step": "3 · Counter examples",
+              "do": "1-2 examples (people, books, companies, films) that don't make these mistakes and DO use the solution — proof for step 2. Steps 2 and 3 may swap."
+            },
+            {
+              "step": "4 · Solution",
+              "do": "Same as og step 5a."
+            },
+            {
+              "step": "5 · Make them choose",
+              "do": "Same as og step 6."
+            },
+            {
+              "step": "6 · CTA",
+              "do": "Same as og step 7."
+            }
+          ]
+        },
+        "podcast_tr": {
+          "steps": [
+            {
+              "step": "1 · Hook",
+              "do": "What they're about to learn and the pain it fixes — or state that their beliefs are wrong / the old way."
+            },
+            {
+              "step": "2 · Describe the problem",
+              "do": "In detail, and why it exists."
+            },
+            {
+              "step": "3 · Beliefs causing it",
+              "do": "Name the common beliefs and industry norms behind the pain and reverse them to create demand."
+            },
+            {
+              "step": "4 · Discredit with everything",
+              "do": "Stories, several SOM patterns, counter examples, personal stories."
+            },
+            {
+              "step": "5 · Reveal the solution",
+              "do": "About halfway through."
+            },
+            {
+              "step": "6 · Go through the steps",
+              "do": "After each step run 7 and 8."
+            },
+            {
+              "step": "7 · Examples after each step",
+              "do": "Stories, examples, metaphors — several."
+            },
+            {
+              "step": "8 · Problems if skipped",
+              "do": "What goes wrong without this step."
+            },
+            {
+              "step": "9 · Wrap up",
+              "do": "Summarize, restate the problems, CTA to the solution."
+            }
+          ]
+        }
+      },
+      "connection": {
+        "intent": "Build rapport and a movement. Instead of shifting a perspective, rally around a belief both sides already hold, so they automatically feel \"I like this person\" — or realize they don't, which is also useful.\n",
+        "subtypes": {
+          "deeper_purpose": "The why behind the brand — purpose, not results.",
+          "traditional": "Beliefs tied to what the creator does or teaches that the audience shares.",
+          "identity": "Personal or behind-the-scenes posts that reinforce an identity (usually image + caption)."
+        },
+        "dos": [
+          "Speak from the heart — energy beats a perfect template",
+          "Topics the creator will still be fired up about in 5 years",
+          "Weave identities and core values in where they fit, never forced"
+        ],
+        "donts": [
+          "Don't chase media or niche trends, or topics others say you should cover",
+          "No politics unless the brand is about politics",
+          "No whining, complaining or standing on top of others — stand FOR something"
+        ],
+        "format_1_rally": [
+          "1 · Connect — state the belief you stand for",
+          "2 · Separate — what MOST people do that's the opposite (something THIS audience isn't doing) -> shared common enemy",
+          "3 · Future pace — how this belief becomes the norm",
+          "4 · Proof — examples of it already becoming the norm (counter examples)",
+          "5 · Solution / consequence — the change needed; optionally the real consequence if it doesn't happen",
+          "6 · Rally up — it's OUR job / mission to stand up for it",
+          "7 · Choose — a powerful question about where and who they want to be"
+        ],
+        "format_2_stand_for": [
+          "1 · State what you stand for in the fewest words (never say 'this is what I stand for')",
+          "2 · Describe it and its effect in 2-4 sentences — powerful over long",
+          "3 · Effect — on the world, society, community, niche or a type of person",
+          "4 · Blame ONE common enemy for why it isn't the norm yet",
+          "5 · What if — paint the future if that enemy disappeared",
+          "6 · Rally — that future is what you stand for and will build with them",
+          "7 · If that's you… -> CTA"
+        ],
+        "format_3_interview": {
+          "mode": "The creator answers on camera, audio or in writing; an editor or the model assembles the answers in this order. The model can either tailor the questions to a belief or assemble supplied answers.",
+          "questions": [
+            "What's the belief?",
+            "What does it mean to you?",
+            "Why is it important — what problems made it important?",
+            "How do we live it or fix that problem?",
+            "What happens when it's fixed?",
+            "Why is this message important?",
+            "Who has already lived it, and what did they do or experience?"
+          ]
+        },
+        "format_4_passion_write": {
+          "mode": "The creator free-writes a letter to the world about the change they want and why the work matters. Model role is a light edit only (or rearranging into format 1 or 2) — keep the creator's words."
+        }
+      },
+      "what_to_do": {
+        "intent": "Educate from mastery on the unique solution, engagingly. Never plain tutorials only — mix these types.",
+        "dos": [
+          "Actually educate — persuasion must not crowd out the teaching",
+          "Move away from regurgitated teachings; use the creator's own language and what others don't teach",
+          "Build demand and engagement while teaching",
+          "After points, add stories, examples, mistakes, pain points, metaphors and multiple scenarios so viewers apply it to themselves"
+        ],
+        "donts": [
+          "Don't teach the full HOW (that's the offer)",
+          "No more than ~10 min of pure information without stories, examples or metaphors",
+          "Don't ramble"
+        ],
+        "persuasive_tutorial": {
+          "uses": [
+            "top of funnel short and long",
+            "webinars",
+            "trainings"
+          ],
+          "structure": [
+            "Intro to the whole piece — one_and_more (promise, mistakes, pain, there are {n} steps / ways)",
+            "Logo reveal (optional)",
+            "For EACH step — intro (short one_and_more: promise, mistakes, pain, sell without selling) -> teach -> outro",
+            "Outro — a metaphor, counter example, story, personal or relatable example of the step in action, so they think 'I get it now'",
+            "CTA — Now you know how to {promise}, but the problem is {what remains with only this info}, and that's why we created {next step}."
+          ],
+          "outline_mode": "Unless a full script is requested, outline per step (promise, mistakes, pain, teaching points, examples) so the creator can speak naturally.",
+          "ratio_hint": "Most of the script builds demand and pulls people in; only a small share is the actual teaching."
+        },
+        "breakdown_review": {
+          "purpose": "Show mastery and borrow social proof by dissecting something with clout (person, brand, book, speech, historical moment) that demonstrates what the creator teaches.",
+          "steps": [
+            "State who or what you're breaking down",
+            "The specific mistakes and pain this will end for them",
+            "Show, read or play the first part",
+            "Break down what they did, contrasted with the mistakes people usually make",
+            "Repeat for each part",
+            "CTA to learn to do the same"
+          ],
+          "needs": "a real, showable example (link, clip, quote) — flag if missing"
+        },
+        "documentation": {
+          "purpose": "Clip talks, podcasts, masterminds and events into standalone pieces.",
+          "model_task": "From source_transcript, pick self-contained segments that already follow an NGM structure; write title bar, caption and cut points."
+        },
+        "statement_and_example": {
+          "best_in": "audio or video, short or long",
+          "steps": [
+            "A statement they haven't realized or don't know how to do (what they'll learn — no steps)",
+            "One or more stories, examples or case studies that demonstrate it and teach through it",
+            "CTA"
+          ]
+        },
+        "top_mistakes": {
+          "steps": [
+            "State what they're about to get (the top {n} mistakes I made {doing X})",
+            "Each mistake — what it was + why you did it (what you thought you'd gain)",
+            "The lesson learned from it",
+            "Repeat, then CTA"
+          ],
+          "pairs_with": "a separate piece teaching how to do it right",
+          "source_fields": "brand_context.identity.mastery.failures_and_lessons"
+        },
+        "self_identifying_education": {
+          "purpose": "Explain a problem they have but can't explain (or explain wrongly) so precisely that they categorize themselves. Unaware to aware. Do NOT teach the fix.",
+          "required": [
+            "Specific mistakes or misconceptions",
+            "The specific problem each one creates — written as MISTAKE -> PROBLEM pairs, not all mistakes then all problems",
+            "A short explanation of why it happens (only if needed — don't over-explain)",
+            "CTA to something that helps fix it"
+          ],
+          "best_in": "sliders (one pair per slide), captions, video",
+          "title_hints": [
+            "{n} {topic} misconceptions that keep you {SA adjective}",
+            "{n} ways {common enemy} controls your {area}"
+          ]
+        }
+      },
+      "special": {
+        "sa_fph_definition": {
+          "purpose": "Define the SA or FPH so viewers self-identify with one and desire the other. Pack in specific pains, mistakes and desires.",
+          "formats": [
+            "slider",
+            "single graphic"
+          ]
+        },
+        "comparison_chart": {
+          "purpose": "Two columns — SA vs FPH, old way vs new way (from a winning TR), or two options.",
+          "formats": [
+            "image",
+            "slider"
+          ]
+        }
+      }
+    },
+    "sales_mechanisms": {
+      "small_tangible_promise": {
+        "rule": "One small, tangible promise per funnel, webinar or series, built from best-performing content. It lets you go deep on specifics while leaving the full solution to be desired.",
+        "tangible_means": "a clear deliverable, a clear result, or both — ideally with a timeframe",
+        "ladder": [
+          "vague — I'll help you fix your {topic}",
+          "tangible — Learn our {deliverable}",
+          "tangible + result — Learn our {deliverable} that could {result} within {timeframe}"
+        ],
+        "fit_into_bigger_picture": "List what the offer covers that this piece won't, plus the problems when those parts are missing. Weave them in with one_and_more, especially near the end."
+      },
+      "new_bigger_promise_transition": [
+        "Recap what was just taught",
+        "The specific benefit they'll get from it",
+        "Introduce a new, bigger problem that will now show up",
+        "State a new promise that fixes that problem",
+        "Move into the offer and pitch"
+      ],
+      "webinar_or_video_series": {
+        "title": "titles.sales_mechanism.webinar_or_series (or the best TR title as-is)",
+        "opening": "A big, bold thought reversal (self_identify works well) — or several stacked reversals of the biggest industry norms, naming the solution without teaching it and promising to fix it in the session.",
+        "teaching_block": [
+          "Name the step",
+          "What people normally do and why it's wrong, outdated or leads to problems",
+          "Live in compassion (why it makes sense that they do it)",
+          "The specific problems they experience (time-based if possible)",
+          "The solution you're about to teach",
+          "SOM discredit, or show the solution in action (counter example, example)",
+          "Teach"
+        ],
+        "connection_placement": "Use connection pieces that serve the mechanism's promise (why this matters to the creator, the change it creates) a few times throughout.",
+        "objections": {
+          "when": "after the offer during the pitch, or woven into the training before it",
+          "which": "only common objections — especially time and \"can I do this\" — never plant financial objections",
+          "how": "one SOM pattern per objection"
+        }
+      },
+      "sales_video_assembly": {
+        "note": "The workbook covers webinars, video series, ads and emails; this sequence reuses their parts.",
+        "sequence": [
+          "Self-identify open — list_method or time_based_identifier on the core pain (SA identity)",
+          "Diagnosis — diagnosis_reveal names the common enemy",
+          "Thought reversal of the biggest norm keeping them stuck (og or context_switch)",
+          "Options — roa_method discredits the alternatives they're weighing",
+          "Unique solution — desire_but shows why every pillar is needed",
+          "Proof — counter examples, stories and case studies from proof_bank",
+          "Deeper purpose — short connection beat",
+          "Offer — new bigger promise + what they get",
+          "Objections — time and ability objections via SOM",
+          "Choose — stay the SA with {pain} or become the FPH with {benefit}",
+          "CTA"
+        ]
+      },
+      "email": {
+        "full_tr": "The whole email is one TR script leading to the CTA. Subject is the TR title or a webinar-style title (optional [FREE WEBINAR] prefix).",
+        "tr_within": "A regular email that uses a TR to shift one belief along the way."
+      },
+      "ad": {
+        "creative": "TR video (test with and without title bars), TR image, or a regular creative",
+        "headline": "A TR title when the creative has no bars; otherwise the webinar-style \"[NEW {MECHANISM}] {benefit} without {current approach}\"",
+        "copy": "Any TR script (og, context_switch or self_identify)",
+        "testing": "Run as a ThruPlay campaign first, then as opt-in ads with the winner"
+      }
+    },
+    "format_adapters": {
+      "reel_short": {
+        "length_s": "15-90 (usually ~60)",
+        "rules": [
+          "On-screen hook or title in the first second. TR layout — title bar on top, speaker 16:9 in the middle, captions or the solution line at the bottom",
+          "One belief, one idea",
+          "Compress — compassion is one line, optional steps are skipped, ONE SOM move in the discredit (or one context-switch pair)",
+          "The solution is one \"what to do\" line or 1-3 quick points",
+          "Choose and CTA can merge into one line"
+        ],
+        "og_timing_example": [
+          "0-3 s — belief is wrong (title bar)",
+          "3-8 s — compassion (one line)",
+          "8-25 s — discredit",
+          "25-45 s — what to do instead",
+          "45-55 s — choose",
+          "55-60 s — CTA"
+        ],
+        "good_fits": [
+          "thought_reversal.context_switch",
+          "thought_reversal.og",
+          "what_to_do.statement_and_example",
+          "what_to_do.top_mistakes",
+          "what_to_do.self_identifying_education",
+          "connection.format_2_stand_for"
+        ]
+      },
+      "video_long": {
+        "length_s": "120-600",
+        "rules": [
+          "Full templates; several SOM moves in the discredit are fine",
+          "Stories, examples or metaphors after every point",
+          "Never 10+ min of pure information",
+          "YouTube — use the platform title field for the TR title instead of on-screen bars"
+        ]
+      },
+      "live": {
+        "steps": [
+          "Announce the topic and the benefit",
+          "The mistakes people make going after that benefit",
+          "The pain those mistakes cause",
+          "Present the solution",
+          "Go deeper into the solution",
+          "Connect — why this means so much to you (deeper purpose)",
+          "After each taught step, re-orient newcomers (what they'll learn, the mistakes and pain, the solution, what's covered, what's next and why it matters to you)",
+          "Teach the next step; repeat the re-orientation until done"
+        ],
+        "notes": [
+          "Invite questions throughout",
+          "Warm up ~2 min before the discredit so people can join",
+          "Up to ~15 min follow a video template, slower and with extra examples; longer follow podcast_tr",
+          "TR and WTD topics work best, with connection elements woven in"
+        ]
+      },
+      "image_post": {
+        "rules": [
+          "Text on the image is the title, quote or statement; the caption carries the full script",
+          "The caption follows the same template steps as a video"
+        ],
+        "styles": {
+          "post_it": "handwritten note — great for testing TR and connection headlines",
+          "quote": "a one-sentence perspective shift (TR) or a statement they'll agree with (connection)",
+          "graphic": "shows the message visually, words optional",
+          "meme": "pokes fun at the OLD way from a winning TR",
+          "comparison_chart": "SA vs FPH, old way vs new way",
+          "phone_function": "mimics a reminder, text or alarm for recurring themes",
+          "puzzle": "fun, engagement and connection focused",
+          "sa_fph_definition": "see script_templates.special"
+        }
+      },
+      "slider": {
+        "rules": [
+          "Slide 1 is the title or hook; one idea (or one mistake -> problem pair) per slide; last slide is the CTA",
+          "Best for WTD, TR, and self-identifying labels or categories",
+          "The caption can carry the explanation when slides stay short"
+        ]
+      },
+      "podcast_episode": {
+        "options": [
+          "Whole episode as one TR — any TR template, each step stretched; stack SOM moves, stories and counter examples in the discredit",
+          "A theme with 2-3 TRs inside — ask where the audience is and which beliefs must be unwound, then write a TR per belief",
+          "TR + WTD + connection mixed in one episode"
+        ],
+        "template": "script_templates.thought_reversal.podcast_tr"
+      },
+      "email": {
+        "see": "sales_mechanisms.email"
+      },
+      "ad": {
+        "see": "sales_mechanisms.ad"
+      },
+      "repurposing": [
+        "Staple piece (podcast / long video) -> clips for reels -> quotes and concepts as image posts",
+        "Same image post and caption on IG, FB and LinkedIn",
+        "Videos over 2 min also go to YouTube"
+      ]
+    },
+    "distribution_and_testing": {
+      "platform": "One main hub (mastery through focus), repurposed to secondary platforms.",
+      "posting_strategies": {
+        "single": "Start here — staple pieces posted 1-7x per week, no repurposing.",
+        "staple": "One staple piece per week on the hub + daily cut-downs (clips, quotes, graphics) on secondary platforms.",
+        "multiple_staples": "Two staple pieces per week + daily cut-downs (needs a team)."
+      },
+      "test_loop": [
+        "post (don't rewrite forever — write, record, post)",
+        "run video as ThruPlay campaigns (15-second view, roughly $0.01-0.05 each, cold traffic)",
+        "analyze",
+        "adjust",
+        "repeat"
+      ],
+      "what_to_test": [
+        "WHAT to say — the topic or belief",
+        "HOW to say it — title, angle, format"
+      ],
+      "analyze": {
+        "organic": "High-effort signals first (saves, shares, comments), then longest view time.",
+        "thruplay": "Average watch time first; break ties with engagement."
+      },
+      "adjust": {
+        "winner": "Retest with new titles and angles; make more on the topic in other formats.",
+        "liked_but_flopped": "Repost with a new title or angle."
+      },
+      "campaign_building": [
+        "Take the best-performing TR or WTD topic (not connection)",
+        "Turn it into the webinar / presentation title (How to {benefit} without {belief}) and the ad headlines; reuse the winning copy",
+        "Optional — test 3 title bars on one video; the winner becomes the webinar title",
+        "Build the presentation from language that already worked (specifics, counter examples, metaphors) — don't guess"
+      ]
+    },
+    "quality_checklist": {
+      "all": [
+        "Voice matches brand_context.voice — would the creator say this out loud?",
+        "Enough real specifics from the specific library (2+ short form, 4+ long form)",
+        "Speaks to the subconscious; no long stretch of pure information without a story, example or metaphor",
+        "Persuades rather than explains; beliefs, not opinions; nobody is called out",
+        "Nothing fabricated; every gap is listed in needs",
+        "Ties to the unique solution (TR / WTD) or to the deeper purpose, values or identities (connection)",
+        "Teaches WHAT and leaves the full HOW for the offer",
+        "CTA present and matches generation_request.cta",
+        "Fits the length and format constraints",
+        "No internal jargon in audience-facing text"
+      ],
+      "thought_reversal": [
+        "Exactly one belief is reversed",
+        "The compassion step is present",
+        "The discredit uses a named SOM move and can't reasonably be argued",
+        "Any counter example actually does the solution",
+        "The choose step contrasts pain with benefit",
+        "The belief passed the pet-peeve filter"
+      ],
+      "connection": [
+        "A clear stand or belief",
+        "The separate step contrasts with what OTHERS do, not what this audience does",
+        "Rally language (we, our job, our mission)",
+        "Timeless — still true in 5 years; no trends or politics unless that's the creator's message"
+      ],
+      "what_to_do": [
+        "Every taught step has an intro and an outro (persuasive tutorial)",
+        "Examples or metaphors after each point",
+        "Concise, no rambling"
+      ]
+    },
+    "example": {
+      "niche": "language learning",
+      "template": "thought_reversal.og",
+      "format": "reel_short (~55 s)",
+      "sections": [
+        {
+          "step": "1 · Belief is wrong",
+          "spoken": "Studying grammar first is the slowest way to actually speak a language."
+        },
+        {
+          "step": "2 · Live in compassion",
+          "spoken": "I get why you do it. School taught it that way, and every textbook opens with verb tables."
+        },
+        {
+          "step": "3 · Discredit (counter example)",
+          "spoken": "But think about your first language. You were speaking in full sentences years before anyone explained a single grammar rule."
+        },
+        {
+          "step": "4 · Further the pain",
+          "spoken": "Stay in textbook mode and you can hit a 300-day app streak and still freeze the moment a waiter asks you something."
+        },
+        {
+          "step": "5a · Solution",
+          "spoken": "Flip it. Speak from week one — badly, out loud, every day — and let grammar clean up what you're already saying."
+        },
+        {
+          "step": "6 · Make them choose",
+          "spoken": "So — another year of verb tables, or actually talking by summer?"
+        },
+        {
+          "step": "7 · CTA",
+          "spoken": "Comment SPEAK and I'll send you the ten-minute daily routine."
+        }
+      ]
+    },
+    "_notes": {
+      "principles": "distilled from S1 + rules repeated across the workbook. Apply to EVERY output.",
+      "principles.stop_the_automation.how_beliefs_get_automated[0]": "parents, teachers, experts, media, books",
+      "principles.stop_the_automation.how_beliefs_get_automated[1]": "heard from many people -> accepted as true",
+      "principles.stop_the_automation.how_beliefs_get_automated[2]": "a method that once worked, now outdated, still followed",
+      "principles.personal_power_red_flags": "never produce content that does these",
+      "evolution.messaging_levels": "where the creator is -> what the scripts should emphasize",
+      "content_mix": "across ALL content — images, videos and podcasts count together",
+      "content_mix.ready_for_change_niche.thought_reversal": "can rise once it works, never above 40",
+      "content_mix.thought_reversal_formats": "rotate so reversals don't all sound alike",
+      "content_mix.thought_reversal_formats.self_identify": "only after OG and context switch are comfortable",
+      "content_mix.video_share": "roughly half video, half other formats",
+      "language_patterns": "S2 M3 — tools embedded INSIDE any template. Master 1-2, then add more.",
+      "language_patterns.som": "Sleight of Mouth (Robert Dilts) — no belief is true 100% of the time, so any belief can be discredited",
+      "language_patterns.roa_method": "Results · Options · Actions",
+      "titles.thought_reversal": "most -> least aggressive",
+      "titles.connection": "a belief statement + identities / core values / SA / FPH",
+      "script_templates.thought_reversal.og": "the original — start here",
+      "script_templates.thought_reversal.self_identify": "advanced",
+      "sales_mechanisms": "S3 M3 V8 + S4 M2 — TR / connection / WTD used inside things that sell",
+      "sales_mechanisms.webinar_or_video_series.teaching_block": "wrap EVERY taught step like this — never just teach",
+      "sales_mechanisms.sales_video_assembly": "NOT a workbook template — NGM parts stitched for a pre-recorded sales video",
+      "quality_checklist": "the model self-checks every script before returning it",
+      "example": "structure illustration ONLY — mirror the structure, never borrow the content"
+    }
+  },
+  "output_spec": {
+    "return_format": "json",
+    "rules": [
+      "spoken text is written to be said out loud, in the requested language",
+      "sections map 1:1 to template steps, in order, so they can become timeline beats",
+      "fields that don't apply to the format are omitted",
+      {
+        "every missing input goes to needs as [NEEDS": "path.to.field]"
+      }
+    ],
+    "script": {
+      "meta": {
+        "mode": null,
+        "content_type": null,
+        "template": null,
+        "template_reason": null,
+        "format": null,
+        "platform": null,
+        "language": null,
+        "target_belief": null,
+        "pillar": null,
+        "patterns_used": [],
+        "ecosystem_elements_used": [],
+        "est_duration_s": null,
+        "word_count": null
+      },
+      "titles": [
+        {
+          "text": null,
+          "style": null
+        }
+      ],
+      "on_screen_hook": null,
+      "sections": [
+        {
+          "step": null,
+          "pattern": null,
+          "spoken": null,
+          "on_screen_text": null,
+          "visual_note": null,
+          "broll_query": null,
+          "est_seconds": null
+        }
+      ],
+      "caption": null,
+      "slides": [],
+      "email": {
+        "subject_lines": [],
+        "preview_text": null,
+        "body": null
+      },
+      "ad": {
+        "headline_variants": [],
+        "primary_text": null,
+        "creative_note": null
+      },
+      "cta": {
+        "type": null,
+        "text": null
+      },
+      "needs": [],
+      "self_check": {},
+      "test_notes": null
+    },
+    "ideation": {
+      "thought_reversal": [
+        {
+          "topic": null,
+          "belief": null,
+          "core_belief": null,
+          "pet_peeve_check": null,
+          "title_options": []
+        }
+      ],
+      "what_to_do": [
+        {
+          "topic": null,
+          "pillar": null,
+          "title_options": []
+        }
+      ],
+      "connection": [
+        {
+          "topic": null,
+          "subtype": null,
+          "title_options": []
+        }
+      ],
+      "self_identifying_education": [
+        {
+          "topic": null,
+          "misconceptions": [],
+          "title_options": []
+        }
+      ],
+      "needs": []
+    },
+    "repurpose": {
+      "clips": [
+        {
+          "start_words": null,
+          "end_words": null,
+          "structure_match": null,
+          "title_bar": null,
+          "caption": null
+        }
+      ],
+      "quote_images": [],
+      "graphic_ideas": [],
+      "needs": []
+    },
+    "_notes": {
+      "return_format": "one JSON object with the keys below, nothing else",
+      "script": "mode = script | outline | titles_only",
+      "script.meta.template": "e.g. thought_reversal.og",
+      "script.meta.template_reason": "one line, only when the model chose the template",
+      "script.meta.patterns_used": "e.g. [som.counter_example, time_based_identifier]",
+      "script.meta.ecosystem_elements_used": "e.g. [struggling_avatar, common_enemy]",
+      "script.titles": "generation_request.variants entries",
+      "script.titles[0].style": "aggressive | statement | gentle | question | how_to | without | fixing | should_need | create_make | …",
+      "script.on_screen_hook": "title bar / first-frame text",
+      "script.sections[0]": "e.g. \"3 · Discredit\"",
+      "script.sections[0].pattern": "language pattern used here, if any",
+      "script.sections[0].on_screen_text": "short text overlay (optional)",
+      "script.sections[0].visual_note": "talking head, b-roll, graphic, screen recording, prop",
+      "script.sections[0].broll_query": "search phrase for the footage library (optional)",
+      "script.caption": "post caption / description; for image posts the full script lives here",
+      "script.slides": "sliders only — one entry per slide",
+      "script.email": "email only",
+      "script.ad": "ad only",
+      "script.self_check": "checklist item -> pass | fixed | flagged (reason)",
+      "script.test_notes": "what this piece tests (what to say vs how to say it) and which signal to watch",
+      "ideation": "mode = topic_ideation",
+      "ideation.thought_reversal[0].pet_peeve_check": "suffers 70%+? works for 30%+?",
+      "ideation.connection[0].subtype": "deeper_purpose | traditional | identity",
+      "repurpose": "mode = repurpose (from generation_request.source_transcript)",
+      "repurpose.clips[0].structure_match": "which NGM template the clip already follows"
+    }
+  },
+  "crosswalk": {
+    "to_market_manifest": {
+      "brand_context.struggling_avatar": "Problem State > NLP avatar definition > Logical Levels > Identity Label",
+      "brand_context.future_paced_hero": "Desired State > NLP avatar definition > Logical Levels > Identity Label",
+      "brand_context.future_paced_hero.movement_name": "Market Generalization > Can it be a movement",
+      "brand_context.unique_solution": "Vehicle / UM / Missing Ingredient (element vs framework = same split as Types > Courses)",
+      "brand_context.diagnosis": "Problem State > Diagnosis (symptoms, pain, root cause -> common enemy; prescription -> unique solution)",
+      "brand_context.specific_library.mistakes": "Problem State Relative Timeline > Specific mistakes / Specific pain",
+      "brand_context.specific_library.feelings": "Problem State > NLP avatar definition > Internal sensory experience",
+      "brand_context.specific_library.desires": "Desired State > Desired outcome + sensory experience (feel, say to themself)",
+      "brand_context.identity.core_values": "Psychographics > Values (yours, mirrored in the audience you attract)",
+      "topic_bank.belief_map.belief": "Problem State > Logical Levels > Beliefs",
+      "brand_context.offers_and_ctas": "Offer / Offer Stacking",
+      "framework": "Message > NGM-elements + Format"
+    },
+    "awareness_stage_to_ngm": {
+      "totally_unaware": [
+        "thought_reversal (og, context_switch)",
+        "explaining_the_unexplained",
+        "self_identifying_education"
+      ],
+      "problem_aware": [
+        "list_method",
+        "time_based_identifier",
+        "diagnosis_reveal",
+        "thought_reversal.self_identify"
+      ],
+      "solution_aware": [
+        "roa_method",
+        "desire_but",
+        "persuasive_tutorial",
+        "statement_and_example"
+      ],
+      "product_aware": [
+        "one_and_more",
+        "small tangible promise",
+        "breakdown_review",
+        "objection handling with SOM"
+      ],
+      "most_aware": [
+        "choose step + direct CTA",
+        "new bigger promise -> offer"
+      ]
+    },
+    "copy_principles_overlap": {
+      "curiosity_open_loops": "one_and_more (step 4), persuasive tutorial step intros, self-identifying education titles",
+      "contrast": "the choose step, comparison_chart, desire_but",
+      "social_proof_authority": "counter examples, breakdown_review, case studies",
+      "unity": "connection content, common enemy, the rally step",
+      "commitment_consistency": "the \"am I right?\" close of list_method, the choose step"
+    },
+    "_notes": {
+      "to_market_manifest": "your existing manifest (Market > Offer > Persuasion); path segments joined with \" > \"",
+      "awareness_stage_to_ngm": "editorial bridge (not in the workbook) for \"Message Relevance vs Customer Awareness\"",
+      "copy_principles_overlap": "where NGM already does what your Copy Principles list names"
+    }
+  }
+}
